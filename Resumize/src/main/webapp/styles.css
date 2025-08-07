@@ -1,0 +1,229 @@
+/* CSS HEX Colors */
+:root {
+    --antiflash-white: #e7ecefff; 
+    --yinmn-blue: #274c77ff; 
+    --air-superiority-blue: #6096baff; 
+    --uranian-blue: #a3cef1ff; 
+    --battleship-gray: #8b8c89ff; 
+}
+
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', serif; /* Keeping the font */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: var(--yinmn-blue); /* Changed to yinmn-blue */
+}
+
+/* Background Image with Opacity */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230418/pngtree-clouds-sky-blue-aesthetic-pastel-image_2403934.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Animation for Loading Elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Home Specific Styles */
+.home {
+    text-align: center;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.button {
+    background-color: var(--air-superiority-blue); /* Changed */
+    color: var(--antiflash-white); /* Changed */
+    border: 2px solid var(--yinmn-blue); /* Changed */
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: var(--uranian-blue); /* Changed */
+    transform: scale(1.05);
+}
+
+/* Feature Box Styles */
+.feature-box {
+    background: var(--antiflash-white); /* Changed */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--yinmn-blue); /* Changed */
+    color: var(--antiflash-white); /* Changed */
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+/* Login and Register Specific Styles */
+.login, .register {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.login h2, .register h2 {
+    font-size: 3em;
+    color: var(--yinmn-blue); /* Changed */
+}
+
+.login p, .register p {
+    font-size: 1.5em;
+    color: var(--yinmn-blue); /* Changed */
+}
+
+.login, .register {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Button Styles for Login/Register */
+.login .button, .register .button {
+    background-color: var(--air-superiority-blue); /* Changed */
+    color: var(--antiflash-white); /* Changed */
+    border: 2px solid var(--yinmn-blue); /* Changed */
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    margin: 20px 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login .button:hover, .register .button:hover {
+    background-color: var(--uranian-blue); /* Changed */
+    transform: scale(1.05);
+}
+
+/* Feature Box Styles for Login/Register */
+.login .feature-box, .register .feature-box {
+    background: var(--antiflash-white); /* Changed */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login .feature-box:hover, .register .feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles for Login/Register */
+.login .footer, .register .footer {
+    background-color: var(--yinmn-blue); /* Changed */
+    color: var(--antiflash-white); /* Changed */
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+/* Dashboard Specific Styles */
+.dashboard {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard h2 {
+    font-size: 3em;
+}
+
+.dashboard h3 {
+    font-size: 2.5em;
+}
+
+.dashboard .alert {
+    margin: 15px auto;
+    max-width: 400px;
+    font-size: 1.5em;
+}
+
+/* Table Styles */
+.dashboard .resume-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+
+.dashboard .resume-table th, .dashboard .resume-table td {
+    border: 2px solid var(--yinmn-blue); /* Changed */
+    padding: 15px;
+    text-align: center;
+}
+
+.dashboard .resume-table th {
+    background-color: var(--antiflash-white); /* Changed */
+}
+
+.dashboard .resume-table tr:hover {
+    background-color: var(--air-superiority-blue); /* Changed */
+    color: var(--antiflash-white); /* Changed */
+}
+
+/* Resume Specific Styles */
+.resume {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.resume h2 {
+    font-size: 3em;
+}
+
+.resume .form-group {
+    margin: 20px 0;
+    text-align: left;
+    width: 80%;
+    margin: 10px auto;
+}
